@@ -2,12 +2,10 @@ PROJECT (LearnedIndex)
 
 FILE (GLOB_RECURSE SRC_LIST "*.cpp")
 
-ADD_LIBRARY (learnedindex SHARED ${SRC_LIST})
-ADD_EXECUTABLE (main main.cxx)
+ADD_EXECUTABLE (test_driver test_driver.cxx ${SRC_LIST} ../lib/add.h ../lib/add.cpp)
 
-TARGET_LINK_LIBRARIES (main learnedindex)
-TARGET_LINK_LIBRARIES (main jemalloc pthread)
+TARGET_LINK_LIBRARIES (test_driver gtest mylib pthread)
 
-INSTALL (TARGETS main
+INSTALL (TARGETS test_driver 
     RUNTIME DESTINATION bin
     )

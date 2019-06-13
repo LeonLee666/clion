@@ -1,13 +1,9 @@
-PROJECT (LearnedIndex)
+PROJECT (demo)
 
 FILE (GLOB_RECURSE SRC_LIST "*.cpp")
 
-ADD_LIBRARY (learnedindex SHARED ${SRC_LIST})
-ADD_EXECUTABLE (main main.cxx)
+ADD_LIBRARY (mylib SHARED ${SRC_LIST})
 
-TARGET_LINK_LIBRARIES (main learnedindex)
-TARGET_LINK_LIBRARIES (main jemalloc pthread)
-
-INSTALL (TARGETS main
+INSTALL (TARGETS mylib
     RUNTIME DESTINATION bin
     )
