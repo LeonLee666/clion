@@ -4,7 +4,6 @@ SET (CMAKE_CXX_COMPILER "g++")
 
 PROJECT (demo)
 
-
 # SET (CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra" CACHE INTERNAL "compiler options" FORCE)
 SET (CMAKE_CXX_FLAGS "-std=c++11" CACHE INTERNAL "compiler options" FORCE)
 SET (CMAKE_CXX_FLAGS_DEBUG "-O0 -g" CACHE INTERNAL "compiler options" FORCE)

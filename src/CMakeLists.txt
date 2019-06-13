@@ -1,4 +1,4 @@
-PROJECT (LearnedIndex)
+PROJECT (demo)
 
 FILE (GLOB_RECURSE SRC_LIST "*.cpp")
 
