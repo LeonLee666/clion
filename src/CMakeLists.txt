@@ -6,6 +6,3 @@ ADD_EXECUTABLE (test_driver test_driver.cxx ${SRC_LIST})
 
 TARGET_LINK_LIBRARIES (test_driver gtest mylib pthread)
 
-INSTALL (TARGETS test_driver 
-    RUNTIME DESTINATION bin
-    )
